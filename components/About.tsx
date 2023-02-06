@@ -29,7 +29,7 @@ function About({}: Props) {
           background
         </h4>
         <p className="text-base">
-          Hi, I'm Phil. As a recent graduate with a Bachelor's degree in
+          Hi, I&apos;m Phil. As a recent graduate with a Bachelor&apos;s degree in
           Computer Science and three years of studies under my belt, I am eager
           to start my career as a Junior Web Developer. I am a quick learner and
           have a passion for developing elegant and efficient web applications.

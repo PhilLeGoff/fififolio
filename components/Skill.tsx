@@ -8,9 +8,6 @@ type Props = {
 };
 
 function Skill({ directionLeft, imagesource, mastery }: Props) {
-  useEffect(() => {
-    console.log(imagesource);
-  }, [])
   
   return (
     <div className="group relative  flex cursor-pointer w-24 h-24 md:h-28 md:w-28 xl:w-32 xl:h-32">
