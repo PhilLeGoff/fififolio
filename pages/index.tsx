@@ -13,7 +13,7 @@ import Image from "next/image";
 export default function Home() {
   
   return (
-    <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0 overflow-y-scroll overflow-x-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
+    <div style={{height: "100dvh"}} className="bg-[rgb(36,36,36)] text-white snap-y snap-mandatory overflow-scroll z-0 overflow-y-scroll overflow-x-hidden scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
       <Head>
         <title>Fififolio</title>
       </Head>
@@ -58,6 +58,8 @@ export default function Home() {
               className="h-10 w-10 rounded-full filter grayscal hover:grayscale-0 cursor-pointer"
               src="/fifisquare.png"
               alt=""
+              width="50"
+              height="50"
             />
           </div>
         </footer>
