@@ -14,15 +14,19 @@ function Projects({}: Props) {
         {projects.map((project, i) => {
           return (
             <div key={i} className="flex flex-col flex-shrink-0 justify-center items-center p-7 space-y-5 w-screen h-screen snap-center md:p-44">
-              <motion.img
-                initial={{ y: -100, opacity: 0 }}
-                transition={{ duration: 1.2 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className=" md:w-[700px] w-[400px]"
-                src={project.imagesource}
-                alt=""
-              />
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                {/* Wrap the motion image with an anchor tag */}
+                <motion.img
+                  initial={{ y: -100, opacity: 0 }}
+                  transition={{ duration: 1.2 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  className="md:w-[700px] w-[400px]"
+                  src={project.imagesource}
+                  alt=""
+                />
+              </a>
+
 
               <div className="px-0 space-y-4 max-w-6xl md:space-y-10 md:px-10">
                 <h4 className="text-2xl font-semibold text-center md:text-4xl">
