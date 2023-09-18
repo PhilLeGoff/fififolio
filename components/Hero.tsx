@@ -1,9 +1,7 @@
-import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 import BackgroundCircles from "./BackgroundCircles";
-import Image from "next/image";
-import { url } from "inspector";
-import Link from "next/link";
 
 type Props = {};
 
@@ -19,11 +17,11 @@ function Hero({}: Props) {
   });
 
   return (
-    <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
+    <div className="flex overflow-hidden flex-col justify-center items-center space-y-8 h-screen text-center">
       <BackgroundCircles />
-      <div className="w-32 h-32 relative">
+      <div className="relative w-32 h-32">
         <Image
-          className="rounded-full mx-auto object-cover"
+          className="object-cover mx-auto rounded-full"
           fill
           src="/fifisquare.png"
           alt=""
@@ -33,7 +31,7 @@ function Hero({}: Props) {
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
           Software Engineer
         </h2>
-        <h1 className="text-5xl lg:text-6xl flex font-semibold scroll-pw-10">
+        <h1 className="flex text-5xl font-semibold lg:text-6xl scroll-pw-10">
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="#F7AB0A" />
         </h1>
