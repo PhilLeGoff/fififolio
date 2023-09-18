@@ -10,7 +10,7 @@ function About({}: Props) {
       transition={{ duration: 1.5 }}
       className="flex relative flex-col justify-evenly items-center px-10 mx-auto max-w-7xl h-screen text-center md:text-left md:flex-row"
     >
-      <h3 className="absolute top-20 md:top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-24 md:top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         About me
       </h3>
       <motion.img
