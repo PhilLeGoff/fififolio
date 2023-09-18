@@ -10,7 +10,7 @@ function About({}: Props) {
       transition={{ duration: 1.5 }}
       className="flex relative flex-col justify-evenly items-center px-10 mx-auto max-w-7xl h-screen text-center md:text-left md:flex-row"
     >
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-16 md:top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         About me
       </h3>
       <motion.img
@@ -22,7 +22,7 @@ function About({}: Props) {
         src="/darkfifi.jpg"
       />
       <div className="flex flex-col justify-center items-center px-0 space-y-8 w-screen md:px-10">
-        <h4 className="text-2xl font-semibold md:text-4xl">
+        <h4 className="z-40 text-2xl font-semibold sm:text-sm md:text-4xl">
           Here is a {" "}
           <span className="underline decoration-[#F7AB0A]/50">little</span>{" "}
           background
