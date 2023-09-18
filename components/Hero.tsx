@@ -31,7 +31,7 @@ function Hero({}: Props) {
         <h2 className="text-sm uppercase text-gray-500 pb-2 tracking-[15px]">
           Software Engineer
         </h2>
-        <h1 className="flex text-5xl font-semibold lg:text-6xl scroll-pw-10">
+        <h1 className="flex text-4xl font-semibold lg:text-6xl scroll-pw-10">
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="#F7AB0A" />
         </h1>
