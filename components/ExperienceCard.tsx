@@ -20,7 +20,7 @@ function ExperienceCard({imagesource, name, type, goal, summary}: Props) {
         src={imagesource}
         alt=""
       />
-      <div className="px-0 md:px-10">
+      <div className="flex flex-col justify-center items-center px-0 md:px-10">
         <h4 className="text-4xl font-light">{name}</h4>
         <p className="text-2xl font-bold">{type}</p>
         <div className="flex my-2 space-x-2">
