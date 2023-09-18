@@ -1,38 +1,37 @@
-import React from "react";
 import { motion } from "framer-motion";
-import projects from '../content/projects'
+import projects from '../content/projects';
 
 type Props = {};
 
 function Projects({}: Props) {
 
   return (
-    <motion.div className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row mw-w-full justify-evenly mx-auto items-center z-0">
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+    <motion.div className="flex overflow-hidden relative z-0 flex-col justify-evenly items-center p-2 h-screen text-left md:flex-row md-w-full">
+      <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
         Projects
       </h3>
-      <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
+      <div className="relative md:w-full w-screen flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 mt-4">
         {projects.map((project, i) => {
           return (
-            <div key={i} className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen">
+            <div key={i} className="flex flex-col flex-shrink-0 justify-center items-center p-7 space-y-5 w-screen h-screen snap-center md:p-44">
               <motion.img
-                initial={{ y: -300, opacity: 0 }}
+                initial={{ y: -100, opacity: 0 }}
                 transition={{ duration: 1.2 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className=" w-[700px]"
+                className=" md:w-[700px] w-[400px]"
                 src={project.imagesource}
                 alt=""
               />
 
-              <div className="space-y-10 px-0 md:px10 max-w-6xl">
-                <h4 className="text-4xl font-semibold text-center">
+              <div className="px-0 space-y-4 max-w-6xl md:space-y-10 md:px-10">
+                <h4 className="text-2xl font-semibold text-center md:text-4xl">
                   <span className="underline decoration-[#F7AB0A]/50">
                     Case Study {i + 1} of {projects.length}:
                   </span>{" "}
                   {project.name}
                 </h4>
-                <p className="text-lg text-center md:text-left">
+                <p className="text-left md:text-lg md:h-auto h-[200px] overflow-scroll">
                   {project.description}
                 </p>
               </div>
