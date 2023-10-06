@@ -35,7 +35,7 @@ function Projects({}: Props) {
                   </span>{" "}
                   {project.name}
                 </h4>
-                <p className="text-left md:text-lg md:h-auto h-[200px] overflow-scroll">
+                <p className="text-left md:text-lg md:h-auto h-[200px] overflow-y-scroll md:overflow-y-hidden">
                   {project.description}
                 </p>
               </div>

@@ -27,7 +27,7 @@ function About({}: Props) {
           <span className="underline decoration-[#F7AB0A]/50">little</span>{" "}
           background
         </h4>
-        <p className="text-base h-[250px] w-[300px] md:h-auto md:w-auto overflow-scroll text-left">
+        <p className="text-base h-[250px] w-[300px] md:h-auto md:w-auto overflow-y-scroll md:overflow-hidden text-left">
           Hi, I&apos;m Phil. As a recent graduate with a Bachelor&apos;s degree in
           Computer Science and three years of studies under my belt, I am eager
           to start my career as a Junior Web Developer. I am a quick learner and
